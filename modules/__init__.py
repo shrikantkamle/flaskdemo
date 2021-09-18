@@ -20,3 +20,19 @@ def home():
         return '<h1> "Connection unsuccessful!!!"</h1>'    
 
 ###############################################################
+
+
+
+###############################################################
+@app.route('/homepage', methods=["GET", "POST"])
+def homepage():
+    es = "hi"
+    # request_param = json.loads(request.args.get('keyword'))
+    # keyword = request_param['keyword']
+    # print(request_param,type(request_param))
+    if es is not None:
+        return '<h1> "this is home page!"</h1>'
+    else:
+        return '<h1> "Connection unsuccessful!!!"</h1>'    
+
+###############################################################
